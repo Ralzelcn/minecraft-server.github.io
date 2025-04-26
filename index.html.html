@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<link rel="stylesheet" href="style.css">
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Сервер | 1234-XRNH.aternos.me</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1a1a1a;
+            color: #ffffff;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://images.unsplash.com/photo-1607513746994-51f730a44832?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .container {
+            background-color: rgba(0, 0, 0, 0.7);
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+        h1 {
+            color: #4CAF50;
+            font-size: 2.5em;
+        }
+        .ip-address {
+            background-color: #333;
+            color: #4CAF50;
+            font-size: 1.5em;
+            padding: 10px;
+            border-radius: 5px;
+            display: inline-block;
+            margin: 10px 0;
+        }
+        .server-info {
+            text-align: left;
+            margin: 20px 0;
+            padding: 10px;
+            background-color: rgba(50, 50, 50, 0.5);
+            border-radius: 5px;
+        }
+        .join-button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .join-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Добро пожаловать на наш сервер!</h1>
+        <p>Присоединяйся к увлекательному миру приключений в Minecraft!</p>
+        
+        <div class="ip-address">IP: 1234-XRNH.aternos.me</div>
+        
+        <div class="server-info">
+            <h2>✨ Особенности сервера:</h2>
+            <ul>
+                <li>Выживание с экономикой</li>
+                <li>Дружелюбное комьюнити</li>
+                <li>Защита территории (GriefPrevention)</li>
+                <li>Крафт и квесты</li>
+            </ul>
+        </div>
+        
+        <button class="join-button" onclick="copyIP()">Скопировать IP</button>
+        
+        <p>Версия: <strong>1.20.1</strong> (Java Edition)</p>
+    </div>
+
+    <script>
+        function copyIP() {
+            const ip = "1234-XRNH.aternos.me";
+            navigator.clipboard.writeText(ip).then(() => {
+                alert("IP скопирован: " + ip);
+            });
+        }
+    </script>
+</body>
+</html>
